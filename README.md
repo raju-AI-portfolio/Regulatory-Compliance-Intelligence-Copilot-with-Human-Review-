@@ -43,23 +43,132 @@ Regulations are structured in **Notion** using hierarchical tagging:
 - Reranking via Cohere Rerank
 - Return top relevant chunks
   
-### 3. Answer Generation & Validation
-* **Expert Prompting:** The system is constrained to answer *only* based on provided sources and must quote exact text.
-* **Confidence Scoring:** Every answer includes a reliability metric.
-* **Human-in-the-loop:** A validation layer via **Airtable** allows compliance officers to approve or version-control answers before they reach the end-user.
+---
+
+### 3️⃣ Answer Generation
+
+**System Prompt:**
+
+You are a compliance expert.
+Answer ONLY from provided sources.
+Quote exact regulatory text.
+
+
+Features:
+- Exact quotations
+- Section citations
+- Confidence score
+- Hallucination guardrails
+
+---
+
+### 4️⃣ Validation Workflow
+
+- Airtable approval forms
+- Workflow:
+
+Question → AI Answer → Officer Review → Approval → Version Log
+
+- Full audit trail
+- Version history tracking
+
+---
+
+### 5️⃣ Chatbot Interface
+
+Deployment Options:
+- Telegram Bot
+- Slack Integration
+- Internal Web App
+- Microsoft Teams
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Tool |
+|-------|------|
+| Orchestration | N8N / LangFlow |
+| Vector DB | Pinecone |
+| Reranking | Cohere |
+| Workflow | Airtable |
+| Interface | Telegram / Slack |
+| Integration | APIs / Webhooks |
 
 ---
 
 ## 📊 Success Metrics
-| Metric | Target |
-| :--- | :--- |
-| **Answer Accuracy** | 95%+ |
-| **Self-Service Rate** | 80% |
-| **Response Time** | < 2 Minutes |
-| **Traceability** | 100% Source Citation |
+
+- 95%+ Accuracy  
+- 80% Self-Service Rate  
+- <2 Min Response Time  
+- 100% Source Traceability  
+- Zero Hallucinated Citations  
 
 ---
 
+## 📚 Dataset Sources
+
+### 🏛️ GDPR
+- Official Regulation (EU) 2016/679
+- GDPR NLP Dataset (HuggingFace)
+- GDPR Articles Dataset (Kaggle)
+- GDPR Violations Dataset (Kaggle)
+- NIST SP 800-53 Rev.5
+
+### 🏥 HIPAA
+- HIPAA Privacy Rule Summary
+- Limited Data Set Documentation
+
+### 🔄 Additional Sources
+- Synthetic compliance queries
+- Internal anonymized manuals
+- Sample policy documents
+
+---
+
+## 📦 Expected Deliverables
+
+1. RAG-enabled Compliance Chatbot  
+2. Architecture & Validation Documentation  
+3. Performance Summary Report  
+
+---
+
+## 🧠 Key Capabilities
+
+- Multi-jurisdiction compliance intelligence  
+- Semantic retrieval & reranking  
+- Audit-ready traceability  
+- Human-in-the-loop governance  
+- Enterprise scalability  
+
+---
+
+## 🚀 Future Enhancements
+
+- Automated regulation updates
+- Cross-regulation reasoning
+- Compliance risk scoring
+- Analytics dashboard
+- Enterprise SSO integration
+
+---
+
+## 🏁 Conclusion
+
+Enterprise-grade regulatory intelligence system combining:
+
+AI + Governance + Traceability = Compliance Confidence
+
+---
+
+## 📦 Deliverables
+1.  **Chatbot Interface:** A functional RAG-enabled bot (Telegram/Slack).
+2.  **Technical Report:** Documentation of dataset setup, vector DB architecture, and validation workflows.
+3.  **Performance Summary:** Final audit of system accuracy and citation reliability.
+
+---
 ## 📂 Dataset Sources
 The system utilizes a mix of authoritative public texts and synthetic data:
 
@@ -72,12 +181,3 @@ The system utilizes a mix of authoritative public texts and synthetic data:
 ### Health Insurance Portability and Accountability Act (HIPAA)
 * [HIPAA Privacy Rule Summary](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html)
 * [Limited Data Set Guidelines](https://www.hhs.gov/hipaa/for-professionals/faq/limited-data-set/index.html)
-
----
-
-## 📦 Deliverables
-1.  **Chatbot Interface:** A functional RAG-enabled bot (Telegram/Slack).
-2.  **Technical Report:** Documentation of dataset setup, vector DB architecture, and validation workflows.
-3.  **Performance Summary:** Final audit of system accuracy and citation reliability.
-
----
