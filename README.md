@@ -117,7 +117,7 @@ Every chunk stored with: regulation · jurisdiction · section_type · version �
 
 ---
 
-### 4️⃣ Validation Workflow
+### Validation Workflow
 
 - Airtable approval forms
 - Workflow:
@@ -175,13 +175,22 @@ Langfuse: latency per step, token count, cost per query — proves <2 min respon
 
 ---
 
-## 📊 Success Metrics
+## 📊 Governance 
 
-- 95%+ Accuracy  
-- 80% Self-Service Rate  
-- <2 Min Response Time  
-- 100% Source Traceability  
-- Zero Hallucinated Citations  
+**What makes this enterprise-grade**
+
+Product Features:
+
+1. **Multi-regulation router :** Outputs a LIST of namespaces — ["HIPAA","GDPR"] — not one label. Searches all relevant jurisdictions in parallel. Answers teammate's concern about mixing.
+2. **Audit logging :** Every query → Airtable row: user, question, answer, citations, confidence, timestamp, approved_by. Full traceable history.
+3. **Approval workflow :** Confidence <0.8 → N8N creates Airtable record → compliance officer notified → reviews → approves or edits → sent to user.
+4. **Document versioning :** Every chunk tagged with version + effective_date. Old chunks marked deprecated when new PDF uploaded. Answers always from current law.
+5. **Live document upload :** Admin uploads new regulation PDF → Streamlit calls /ingest → auto-chunks → Pinecone updated → immediately searchable.
+6. **RBAC (simulated) : **Role tag on every query: employee/officer/admin. System prompt adjusts detail level. Demonstrates concept without full auth complexity.
+7. **Jurisdiction awareness :** metadata.jurisdiction = "US" or "EU". Router filters by jurisdiction. HIPAA and GDPR never searched together unless question explicitly spans both.
+8. **Langfuse monitoring :** One line of code. Auto-traces every query: latency per step, token count, cost. Dashboard open during presentation — live proof.
+9. **Violation risk warning :** GDPR Violations dataset loaded. AI can add: "Companies were fined €X for similar violations." Makes answers more actionable.
+
 
 ---
 
