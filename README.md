@@ -62,7 +62,6 @@ Airtable approval queue : Reviews low-confidence answers before delivery. Approv
 Streamlit dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse traces. Manage system health.
 
 
-
 ---
 
 ## 🏗️ Datasets
@@ -77,20 +76,44 @@ Every chunk stored with: regulation · jurisdiction · section_type · version �
   
 ---
 
-### 3️⃣ Answer Generation
+### Architecture - 5 zones — what lives where
 
-**System Prompt:**
+**Zone A:** - regulation documents (download once)
+- HIPAA PDFs (hhs.gov)
+- GDPR PDF (eur-lex.europa.eu)
+- NIST 800-53 PDF
+- HuggingFace GDPR dataset
+- GDPR Violations (Kaggle)
+- 30 synthetic Q&A test pairs
 
-You are a compliance expert.
-Answer ONLY from provided sources.
-Quote exact regulatory text.
+**Zone B :** - GitHub Codespace (write & test all Python)
+- ingest.py — chunk + embed to Pinecone
+- rag_pipeline.py — full retrieval logic
+- app.py — FastAPI server
+- evaluator.py — RAGAS scoring
+- ui.py — Streamlit 4 tabs
 
+**Zone C :** - HuggingFace Space (live Python backend)
+- FastAPI public URL
+- Streamlit UI
+- RAGAS evaluator
+- Langfuse auto-trace
 
-Features:
-- Exact quotations
-- Section citations
-- Confidence score
-- Hallucination guardrails
+**Zone D :** - Zone D — external stores
+- Pinecone — 3 namespaces
+- Airtable — audit log
+- Langfuse — live traces
+
+**Zone E :** - N8N (workflow + governance)
+- Telegram trigger
+- HTTP POST → HuggingFace
+- Airtable audit logging
+- Confidence check
+- Approval workflow
+- RAGAS score report
+- Version alerts
+
+- **Note: ** N8N cannot run Python. All ML logic (RAG, RAGAS, Langfuse) lives in HuggingFace. N8N calls POST /query with {question, user_id, role} and receives {answer, citations, confidence, regulation} back as JSON._
 
 ---
 
