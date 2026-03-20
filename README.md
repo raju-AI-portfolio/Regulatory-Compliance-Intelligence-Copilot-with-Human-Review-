@@ -1,10 +1,31 @@
 # Regulatory-Compliance-Q-A-System
 An AI-powered "Retrieval Augmented Generation (RAG)" system designed to automate regulatory inquiries for healthcare. This tool ensures that compliance teams receive accurate, cited, and validated answers regarding GDPR, HIPAA, SOX, and more.
 
+Domain: Healthcare  ·  Jurisdictions: US (HIPAA) + EU (GDPR)  ·  Stack: LangChain · Pinecone · HuggingFace · N8N
 ---
 
 ## 🏛️ Business Challenge
-Compliance teams are often overwhelmed by repetitive regulatory questions. Inaccurate guidance in high-stakes industries like healthcare can lead to violations costing millions of dollars in fines and legal fees.
+Why does this system need to exist?
+Compliance teams in hospitals answer the same regulatory questions repeatedly. Wrong answers lead to violations costing millions.
+**Pain Point:**
+Repetitive questions:A nurse asks "Can I share this patient's record?" 10+ times a day. Compliance officer answers manually every time — wasting hours.
+
+**Risk**
+Wrong answers = huge fines 
+HIPAA violations: up to $1.9M per category/year. GDPR fines: up to €20M or 4% of global revenue. One mistake is catastrophic.
+
+**Opportunity**
+Our solution :
+RAG chatbot that answers instantly from actual law documents, always cites the exact section, and flags uncertain answers for human review.
+
+**Real examples that need instant answers:**
+"Can I send my patient's MRI scan to a specialist in Germany?"
+
+"How long must we keep patient records under GDPR?"
+
+"Do we need encryption for this patient database?"
+
+"What happens if we have a data breach — who do we notify?"
 
 ## 🎯 Project Objective
 To build a validated RAG system that:
