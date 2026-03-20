@@ -1,4 +1,4 @@
-<img width="550" height="391" alt="image" src="https://github.com/user-attachments/assets/100991bf-39e0-444c-97b3-0b485e120b2f" /># Regulatory-Compliance-Q-A-System
+# Regulatory-Compliance-Q-A-System
 An AI-powered "Retrieval Augmented Generation (RAG)" system designed to automate regulatory inquiries for healthcare. This tool ensures that compliance teams receive accurate, cited, and validated answers regarding GDPR, HIPAA, SOX, and more.
 
 Domain: Healthcare  ·  Jurisdictions: US (HIPAA) + EU (GDPR)  ·  Stack: LangChain · Pinecone · HuggingFace · N8N
