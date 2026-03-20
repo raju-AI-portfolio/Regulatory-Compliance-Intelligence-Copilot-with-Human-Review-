@@ -113,7 +113,7 @@ Every chunk stored with: regulation · jurisdiction · section_type · version �
 - RAGAS score report
 - Version alerts
 
-- **Note: ** N8N cannot run Python. All ML logic (RAG, RAGAS, Langfuse) lives in HuggingFace. N8N calls POST /query with {question, user_id, role} and receives {answer, citations, confidence, regulation} back as JSON._
+**Note: ** N8N cannot run Python. All ML logic (RAG, RAGAS, Langfuse) lives in HuggingFace. N8N calls POST /query with {question, user_id, role} and receives {answer, citations, confidence, regulation} back as JSON._
 
 ---
 
@@ -129,13 +129,42 @@ Question → AI Answer → Officer Review → Approval → Version Log
 
 ---
 
-### 5️⃣ Chatbot Interface
+### Pipeline (7 steps · 5 LLM calls · 3.5 seconds)
 
-Deployment Options:
-- Telegram Bot
-- Slack Integration
-- Internal Web App
-- Microsoft Teams
+**Step1: User asks in Telegram** → N8N sends JSON to HuggingFace - N8N records: user_id, role, timestamp. Sends {question, user_id, role} via HTTP POST.
+
+**Step 2: LLM calls 1–3 run in parallel via asyncio — total ~0.5s**
+
+**LLM Call 1 :** Query structuring + Step-back
+Extracts: regulations list, legal keywords, metadata filters, broader concept question. Decides jurisdiction: US/EU/both.
+
+**LLM Call 2 :** ** HyDE**
+Writes fake regulation-style answer in legal vocabulary. Embeds this — not the original question. Fixes casual vs legal language gap.
+
+**LLM Call 3** RAG Fusion
+Generates 4 query variations. Each searched separately. RRF scores: chunks appearing in more searches ranked higher.
+
+
+**Step3 : Hybrid search across correct namespaces (parallel)**
+**Dense (Pinecone):** Semantic search using HyDE embedding + jurisdiction filter. HIPAA searches HIPAA namespace only. GDPR searches GDPR namespace only. They never mix.
+**Sparse (BM25):** Exact keyword search using extracted legal terms like "§164.312" and "Article 44".
+
+**Step4:**
+Cohere reranker → top 6 chunks selected
+All retrieved chunks merged. Cohere specialist model picks top 6 most relevant. Removes noise before LLM sees anything. Not an LLM — dedicated reranker model.
+
+**Step 5:**
+LLM Call 4 — final answer with forced citations
+Claude/GPT-4o-mini reads 6 law chunks. Rules: answer ONLY from chunks, cite exact sections, structure multi-regulation answers clearly ("Under HIPAA... Under GDPR..."), include confidence score.
+
+**Step6 :**
+**Score ≥ 0.8** — direct delivery (Answer sent to employee via Telegram immediately. 80% of all questions.)
+**⚠️ Score < 0.8** — human review (Compliance officer reviews in Airtable. Approves or corrects. Then sent.)
+
+**Step7 : Audit log + Langfuse trace recorded automatically**
+Airtable: user_id, question, answer, citations, confidence, timestamp, approved_by.
+Langfuse: latency per step, token count, cost per query — proves <2 min response metric.
+
 
 ---
 
