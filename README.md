@@ -1,4 +1,4 @@
-# Regulatory-Compliance-Q-A-System
+<img width="550" height="391" alt="image" src="https://github.com/user-attachments/assets/100991bf-39e0-444c-97b3-0b485e120b2f" /># Regulatory-Compliance-Q-A-System
 An AI-powered "Retrieval Augmented Generation (RAG)" system designed to automate regulatory inquiries for healthcare. This tool ensures that compliance teams receive accurate, cited, and validated answers regarding GDPR, HIPAA, SOX, and more.
 
 Domain: Healthcare  ·  Jurisdictions: US (HIPAA) + EU (GDPR)  ·  Stack: LangChain · Pinecone · HuggingFace · N8N
@@ -27,42 +27,53 @@ RAG chatbot that answers instantly from actual law documents, always cites the e
 
 "What happens if we have a data breach — who do we notify?"
 
-## 🎯 Project Objective
-To build a validated RAG system that:
-* Provides instant answers to employee questions about complex regulations.
-* Ensures **100% source traceability** with exact citations.
-* Minimizes human error through a multi-layered validation workflow.
+## 🎯 Solution
+**Normal AI (problem)**
+Answers from memory : ChatGPT learned from the internet. For specific healthcare laws it may be wrong, outdated, or miss jurisdiction differences between HIPAA (US) and GDPR (EU).
+
+**Our RAG system (solution)**
+Answers from actual law : First searches the real law PDFs, finds the relevant paragraph, then AI writes a clear answer from ONLY that paragraph. Like an open-book exam — every answer backed by law.
+
+**Jurisdiction awareness — your teammate's key concern answered**
+We keep HIPAA (US) and GDPR (EU) in completely separate namespaces in our database. The smart router reads each question and decides which law to search — they never get mixed up. Cross-border questions (EU patient in US hospital) search both and clearly separate the answers: "Under HIPAA... Under GDPR..."
+
+**Benefits:**
+1. Always correct : Answer comes from actual law text. Zero hallucination. Confidence score on every answer.
+2. Always cited : Every statement backed by exact section: HIPAA §164.502, GDPR Article 44. 100% traceable.
+3. Always governed : Low confidence → human officer reviews before sending. Full audit trail in Airtable.
+   
+---
+
+## Who uses our system?
+* **Nurses & Doctors:** "Can I share this patient's data with a specialist abroad?"
+* **Hospital Admin:** "How long must we keep patient records?"
+* **Legal & Compliance:** "How do we respond to a data access request?"
+* **Clinical Research:** "Can we reuse trial data for another study?"
+* **IT & Data Teams:** "Do we need encryption for this dataset?"
+* **Pharma & Biotech:** "What consent is needed for drug safety analysis?"
+
+**Interface 1 — employees**
+Telegram chatbot : Ask in plain language. Get cited answer in under 2 minutes. No login. No technical knowledge needed.
+
+**Interface 2 — compliance officer**
+Airtable approval queue : Reviews low-confidence answers before delivery. Approves or corrects. Sees full audit trail.
+
+**Interface 3 — admin team**
+Streamlit dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse traces. Manage system health.
+
+
 
 ---
 
-## 🛠️ Tech Stack & Tools
-* **Orchestration:** N8N / LangFlow
-* **Vector Database:** Pinecone
-* **Data Management:** Notion & Airtable
-* **Reranking:** Cohere Rerank
-* **Interface:** Telegram / Slack
-* **LLM Integration:** Semantic chunking and multi-query retrieval models
+## 🏗️ Datasets
+### 1. Documents used 
 
----
+<img width="1007" height="671" alt="image" src="https://github.com/user-attachments/assets/2b16ab0c-796f-4187-825b-4e2551bf2f16" />
 
-## 🏗️ Implementation Approach
 
-### 1. Knowledge Base Architecture
-Regulations are structured in **Notion** using hierarchical tagging: 
-`Regulation` → `Article` → `Section`.
+**Chunk metadata** — answers teammate's question on metadata structure
+Every chunk stored with: regulation · jurisdiction · section_type · version · effective_date · citation · is_deprecated. Router uses jurisdiction tag to never mix HIPAA and GDPR searches.
 
-### 2. RAG Pipeline
-#### 📂 Document Processing
-- Upload regulation PDFs to vector DB
-- Add metadata (date, jurisdiction)
-- Semantic chunking with overlap
-- Context-preserving segmentation
-
-#### 🔎 Retrieval Strategy
-- Multi-query retrieval (3 rephrased queries)
-- Semantic similarity search
-- Reranking via Cohere Rerank
-- Return top relevant chunks
   
 ---
 
