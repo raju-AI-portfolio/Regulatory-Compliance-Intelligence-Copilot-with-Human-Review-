@@ -170,14 +170,8 @@ Langfuse: latency per step, token count, cost per query — proves <2 min respon
 
 ## 🛠️ Tech Stack
 
-| Layer | Tool |
-|-------|------|
-| Orchestration | N8N / LangFlow |
-| Vector DB | Pinecone |
-| Reranking | Cohere |
-| Workflow | Airtable |
-| Interface | Telegram / Slack |
-| Integration | APIs / Webhooks |
+<img width="853" height="797" alt="image" src="https://github.com/user-attachments/assets/48baa06b-dd43-4b26-8652-6f8ef207f44d" />
+
 
 ---
 
