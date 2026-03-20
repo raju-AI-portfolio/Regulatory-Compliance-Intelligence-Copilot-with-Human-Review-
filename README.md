@@ -186,7 +186,7 @@ Product Features:
 3. **Approval workflow :** Confidence <0.8 → N8N creates Airtable record → compliance officer notified → reviews → approves or edits → sent to user.
 4. **Document versioning :** Every chunk tagged with version + effective_date. Old chunks marked deprecated when new PDF uploaded. Answers always from current law.
 5. **Live document upload :** Admin uploads new regulation PDF → Streamlit calls /ingest → auto-chunks → Pinecone updated → immediately searchable.
-6. **RBAC (simulated) : **Role tag on every query: employee/officer/admin. System prompt adjusts detail level. Demonstrates concept without full auth complexity.
+6. **RBAC (simulated) :** Role tag on every query: employee/officer/admin. System prompt adjusts detail level. Demonstrates concept without full auth complexity.
 7. **Jurisdiction awareness :** metadata.jurisdiction = "US" or "EU". Router filters by jurisdiction. HIPAA and GDPR never searched together unless question explicitly spans both.
 8. **Langfuse monitoring :** One line of code. Auto-traces every query: latency per step, token count, cost. Dashboard open during presentation — live proof.
 9. **Violation risk warning :** GDPR Violations dataset loaded. AI can add: "Companies were fined €X for similar violations." Makes answers more actionable.
@@ -194,14 +194,10 @@ Product Features:
 
 ---
 
-## 📚 Dataset Sources
+## Evaluation
 
-### 🏛️ GDPR
-- Official Regulation (EU) 2016/679
-- GDPR NLP Dataset (HuggingFace)
-- GDPR Articles Dataset (Kaggle)
-- GDPR Violations Dataset (Kaggle)
-- NIST SP 800-53 Rev.5
+<img width="730" height="486" alt="image" src="https://github.com/user-attachments/assets/4ae4ddee-30fb-4536-b948-e191b0f0f156" />
+
 
 ### 🏥 HIPAA
 - HIPAA Privacy Rule Summary
