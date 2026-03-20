@@ -199,22 +199,9 @@ Product Features:
 <img width="730" height="486" alt="image" src="https://github.com/user-attachments/assets/4ae4ddee-30fb-4536-b948-e191b0f0f156" />
 
 
-### 🏥 HIPAA
-- HIPAA Privacy Rule Summary
-- Limited Data Set Documentation
+###  Demo
+<img width="730" height="471" alt="image" src="https://github.com/user-attachments/assets/0bd3e9cd-07ef-4c17-8e6e-e40a04d7d06e" />
 
-### 🔄 Additional Sources
-- Synthetic compliance queries
-- Internal anonymized manuals
-- Sample policy documents
-
----
-
-## 📦 Expected Deliverables
-
-1. RAG-enabled Compliance Chatbot  
-2. Architecture & Validation Documentation  
-3. Performance Summary Report  
 
 ---
 
