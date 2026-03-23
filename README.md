@@ -75,6 +75,7 @@ Every chunk stored with: regulation · jurisdiction · section_type · version �
 
   
 ---
+<img width="4930" height="4133" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/61d9be44-b254-4229-bc4e-20e1420def0e" />
 
 ### Architecture - 5 zones — what lives where
 
