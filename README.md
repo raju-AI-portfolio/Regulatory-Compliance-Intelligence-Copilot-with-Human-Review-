@@ -314,3 +314,8 @@ A typical structure for this project is organized around ingestion, backend serv
 ├── requirements.txt
 ├── .env.example
 └── README.md
+
+
+**Streamlit Frontend Look:**
+
+<img width="1366" height="597" alt="image" src="https://github.com/user-attachments/assets/992edae3-7e35-4940-8927-4e2813aa9e4e" />
