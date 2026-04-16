@@ -15,7 +15,7 @@
 
 > **A production-grade, evidence-grounded Q&A system that answers regulatory compliance questions with verified citations, confidence-based human review routing, and full audit logging — built for healthcare and data privacy organisations.**
 
-[Features](#-key-features) · [Architecture](#-architecture) · [Pipeline](#-10-stage-rag-pipeline) · [Results](#-validation--kpi-results) · [Tech Stack](#-tech-stack) · [Setup](#-getting-started)
+[Overview](#overview) · [Business Challenge](#️-business-challenge) · [Solution](#-solution) · [Who Uses It](#who-uses-our-system) · [Data Coverage](#data-coverage) · [Key Features](#-key-features) · [Tech Stack](#-tech-stack) · [Pipeline](#️-10-stage-rag-pipeline) · [Process Flow](#process-flow) · [Governance](#governance-and-human-review) · [Guardrails](#guardrails) · [Results](#-validation--kpi-results) · [Repository Structure](#repository-structure)
 
 </div>
 
@@ -107,6 +107,7 @@ The solution uses official regulatory and standards documents as source material
 | **Total** | All namespaces | **3,600** |
 
 ---
+
 ## ✨ Key Features
 
 | Feature | Description |
@@ -120,7 +121,6 @@ The solution uses official regulatory and standards documents as source material
 | 🔒 **Policy Guardrails** | Three-class classifier blocks prompt injections, jailbreaks, and off-topic requests |
 | 📋 **Airtable Audit Trail** | Every interaction — question, answer, citations, confidence, status — is logged |
 | ⚡ **Fast Responses** | 11.8s average end-to-end latency, well within interactive use requirements |
-
 
 ---
 
@@ -137,8 +137,8 @@ The solution uses official regulatory and standards documents as source material
 | **Automation** | n8n | Pending review alerts to Telegram |
 | **Human Review** | Python Telegram Bot | Officer review, correction, Airtable write-back |
 
-
 ---
+
 ## ⚙️ 10-Stage RAG Pipeline
 
 ```
@@ -153,16 +153,17 @@ The solution uses official regulatory and standards documents as source material
 9. Confidence Scoring & Routing     →   Auto-approve or pending_review
 10. Airtable Logging & Retrieval    →   Full audit trail, reviewed answer by record ID
 ```
+
 ---
 
 ## Process Flow
 
 The process flow diagram in the final report shows the complete sequence from:
+- User question entry in Streamlit
+- Through retrieval, reranking, generation, and confidence scoring
+- To Airtable logging, Telegram alert, officer review, and final answer retrieval
 
-**User / UI → FastAPI → Framework Router → Pinecone Retrieval → Cohere Reranking → OpenAI Answer Generation → Confidence & Review Decision → Airtable Audit Trail → Telegram Alert → Reviewer Approval/Correction → Final Reviewed Answer in Streamlit**. The visual workflow is presented in the diagram on page 6 of the report. 
----
-
-<img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/146ecee2-442d-444d-aa5d-e43dc48fc4f5" />
+<img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/146ecee2-442d-444d-aa5d-e43dc48fc4f5" />
 
 ---
 
@@ -213,7 +214,6 @@ In the current implementation, both `block` and `review` outcomes stop retrieval
 
 ## 📊 Validation & KPI Results
 
-
 The system was evaluated using two complementary approaches:
 
 ### 1. Manual / LLM-as-Judge Validation
@@ -222,14 +222,12 @@ The validation workbook separates test cases into:
 - **Ambiguous / Cross-Framework**
 - **Guardrails**
 
-This prevents misleading interpretation by evaluating each class of question with appropriate criteria. :contentReference[oaicite:10]{index=10}
+This prevents misleading interpretation by evaluating each class of question with appropriate criteria.
 
 ### 2. RAGAS-Based Automated Evaluation
 A subset of 15 questions across frameworks was evaluated using:
 - **Faithfulness**
 - **Answer Correctness**
-
-
 
 ### Headline KPIs — Pure Regulatory Q&A (45 questions)
 
@@ -266,6 +264,7 @@ These results indicate strong grounding, with lower correctness in some cases dr
 ---
 
 **Key Findings:**
+
 **Answer Quality and Accuracy**
 The system achieved an answer accuracy of 93.3% on Pure Regulatory Q&A tests, surpassing the 90% target. Questions on GDPR rights (erasure, restriction of processing, access), HIPAA safeguards and breach notification, and NIST CSF components all scored predominantly 4 or 5 out of 5. The most common cause of a score of 4 rather than 5 was a slight omission of one condition or nuance in longer multi-part questions, rather than any factual error.
 **Self-Service Rate and Review Routing**
@@ -321,5 +320,4 @@ A typical structure for this project is organized around ingestion, backend serv
 ├── requirements.txt
 ├── .env.example
 └── README.md
-
-
+```
