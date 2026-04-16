@@ -139,6 +139,21 @@ The solution uses official regulatory and standards documents as source material
 
 
 ---
+## ⚙️ 10-Stage RAG Pipeline
+
+```
+1. Request Intake & Validation      →   FastAPI schema validation
+2. Framework Routing                →   GDPR / HIPAA / NIST / Multi-framework
+3. Multi-Query Expansion            →   3 semantic query variants
+4. Namespace Selection              →   PDF + structured namespaces per framework
+5. Semantic Retrieval               →   Pinecone cosine similarity search
+6. Deduplication & Reranking        →   Cohere semantic reranking
+7. Grounded Answer Generation       →   OpenAI from retrieved chunks only
+8. Citation Normalisation           →   GDPR Art. / HIPAA CFR / NIST CSF format
+9. Confidence Scoring & Routing     →   Auto-approve or pending_review
+10. Airtable Logging & Retrieval    →   Full audit trail, reviewed answer by record ID
+```
+---
 
 ## End-to-End Workflow
 
