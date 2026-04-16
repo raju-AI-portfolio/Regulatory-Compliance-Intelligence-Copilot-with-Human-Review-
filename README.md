@@ -155,43 +155,6 @@ The solution uses official regulatory and standards documents as source material
 ```
 ---
 
-## End-to-End Workflow
-
-The system processes every query through the following stages:
-
-1. **Request Intake and Validation**  
-   FastAPI validates the input request and reads the question, optional user ID, and framework selector.
-
-2. **Framework Routing**  
-   The system identifies whether the question relates to GDPR, HIPAA, NIST, or multiple frameworks.
-
-3. **Multi-Query Expansion**  
-   The question is rewritten into multiple variants to improve semantic recall.
-
-4. **Namespace Selection**  
-   Relevant Pinecone namespaces are selected based on detected framework(s).
-
-5. **Semantic Retrieval**  
-   Candidate chunks are retrieved from Pinecone using vector similarity.
-
-6. **Deduplication and Reranking**  
-   Duplicate chunks are removed and the candidate evidence is reranked using Cohere.
-
-7. **Grounded Answer Generation**  
-   OpenAI generates an answer strictly from the reranked evidence.
-
-8. **Citation Normalization**  
-   Citations are standardized into readable regulatory reference formats.
-
-9. **Confidence Scoring and Review Decision**  
-   The system combines retrieval strength, citation signals, and answer consistency to compute confidence and assign a status.
-
-10. **Human Review**  
-   Pending-review cases are escalated to the compliance officer through Telegram.
-
-11. **Airtable Logging and Reviewed Answer Retrieval**  
-   Full interaction metadata is logged, and final reviewed answers can be retrieved later by record ID. :contentReference[oaicite:5]{index=5}
-
 ---
 
 ## Process Flow
@@ -202,6 +165,7 @@ The process flow diagram in the final report shows the complete sequence from:
 
 ---
 
+<img width="1360" height="3240" alt="regulatory_compliance_rag_flow_final" src="https://github.com/user-attachments/assets/9503c4f7-41fd-45ad-bbac-6bcd99c153c0" />
 
 ---
 
