@@ -37,6 +37,7 @@ Unlike a standard LLM chatbot, this system does **not** rely on unconstrained mo
 ## 🏛️ Business Challenge
 Why does this system need to exist?
 Compliance teams in hospitals answer the same regulatory questions repeatedly. Wrong answers lead to violations costing millions.
+
 **Pain Point:**
 Repetitive questions:A nurse asks "Can I share this patient's record?" 10+ times a day. Compliance officer answers manually every time — wasting hours.
 
