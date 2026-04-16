@@ -34,17 +34,62 @@ Unlike a standard LLM chatbot, this system does **not** rely on unconstrained mo
 
 ---
 
-## Problem Statement
+## 🏛️ Business Challenge
+Why does this system need to exist?
+Compliance teams in hospitals answer the same regulatory questions repeatedly. Wrong answers lead to violations costing millions.
+**Pain Point:**
+Repetitive questions:A nurse asks "Can I share this patient's record?" 10+ times a day. Compliance officer answers manually every time — wasting hours.
 
-Compliance, privacy, and information security teams often need to answer repeated questions on data privacy, healthcare regulation, and security frameworks. Traditional approaches are slow, difficult to standardize, and weak from an audit perspective. Generic chatbots are not sufficient for this domain because unsupported answers can create legal, regulatory, and operational risk. :contentReference[oaicite:2]{index=2}
+**Risk**
+Wrong answers = huge fines 
+HIPAA violations: up to $1.9M per category/year. GDPR fines: up to €20M or 4% of global revenue. One mistake is catastrophic.
 
-This project addresses that problem by building a compliance assistant that:
+**Opportunity**
+Our solution :
+RAG chatbot that answers instantly from actual law documents, always cites the exact section, and flags uncertain answers for human review.
 
-- retrieves answers from approved regulatory source documents
-- generates grounded responses with citations
-- uses confidence-based decisioning to separate self-service answers from uncertain cases
-- escalates low-confidence cases to human review
-- stores a full audit trail for every interaction
+**Real examples that need instant answers:**
+"Can I send my patient's MRI scan to a specialist in Germany?"
+
+"How long must we keep patient records under GDPR?"
+
+"Do we need encryption for this patient database?"
+
+"What happens if we have a data breach — who do we notify?"
+
+## 🎯 Solution
+**Normal AI (problem)**
+Answers from memory : ChatGPT learned from the internet. For specific healthcare laws it may be wrong, outdated, or miss jurisdiction differences between HIPAA (US) and GDPR (EU).
+
+**Our RAG system (solution)**
+Answers from actual law : First searches the real law PDFs, finds the relevant paragraph, then AI writes a clear answer from ONLY that paragraph. Like an open-book exam — every answer backed by law.
+
+**Jurisdiction awareness — your teammate's key concern answered**
+We keep HIPAA (US) and GDPR (EU) in completely separate namespaces in our database. The smart router reads each question and decides which law to search — they never get mixed up. Cross-border questions (EU patient in US hospital) search both and clearly separate the answers: "Under HIPAA... Under GDPR..."
+
+**Benefits:**
+1. Always correct : Answer comes from actual law text. Zero hallucination. Confidence score on every answer.
+2. Always cited : Every statement backed by exact section: HIPAA §164.502, GDPR Article 44. 100% traceable.
+3. Always governed : Low confidence → human officer reviews before sending. Full audit trail in Airtable.
+   
+---
+
+## Who uses our system?
+* **Nurses & Doctors:** "Can I share this patient's data with a specialist abroad?"
+* **Hospital Admin:** "How long must we keep patient records?"
+* **Legal & Compliance:** "How do we respond to a data access request?"
+* **Clinical Research:** "Can we reuse trial data for another study?"
+* **IT & Data Teams:** "Do we need encryption for this dataset?"
+* **Pharma & Biotech:** "What consent is needed for drug safety analysis?"
+
+**Interface 1 — employees**
+Telegram chatbot : Ask in plain language. Get cited answer in under 2 minutes. No login. No technical knowledge needed.
+
+**Interface 2 — compliance officer**
+Airtable approval queue : Reviews low-confidence answers before delivery. Approves or corrects. Sees full audit trail.
+
+**Interface 3 — admin team**
+Streamlit dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse traces. Manage system health.
 
 ---
 
