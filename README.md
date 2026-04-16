@@ -124,6 +124,18 @@ The solution uses official regulatory and standards documents as source material
 
 ---
 
+## 🧰 Tech Stack
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Frontend** | Streamlit | Query entry, answer display, review lookup |
+| **Backend** | FastAPI | Orchestration, routing, confidence scoring |
+| **Vector DB** | Pinecone | 3,600 regulatory chunk embeddings across 6 namespaces |
+| **Reranking** | Cohere | Semantic evidence reranking |
+| **LLM** | OpenAI GPT-4.1-mini | Grounded answer generation |
+| **Governance** | Airtable | Full audit trail and reviewed-answer storage |
+| **Automation** | n8n | Pending review alerts to Telegram |
+| **Human Review** | Python Telegram Bot | Officer review, correction, Airtable write-back |
 
 
 ---
