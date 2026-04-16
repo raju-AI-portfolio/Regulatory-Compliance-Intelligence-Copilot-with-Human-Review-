@@ -83,13 +83,13 @@ We keep HIPAA (US) and GDPR (EU) in completely separate namespaces in our databa
 * **Pharma & Biotech:** "What consent is needed for drug safety analysis?"
 
 **Interface 1 — employees**
-Telegram chatbot : Ask in plain language. Get cited answer in under 2 minutes. No login. No technical knowledge needed.
+Telegram chatbot : Ask in plain language. Get cited answer in under 30 seconds. with optional log. No technical knowledge needed.
 
 **Interface 2 — compliance officer**
-Airtable approval queue : Reviews low-confidence answers before delivery. Approves or corrects. Sees full audit trail.
+Telegram approval queue : Reviews low-confidence answers before delivery. Approves or corrects. Sees full audit trail in Airtable.
 
 **Interface 3 — admin team**
-Streamlit dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse traces. Manage system health.
+Backend dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse traces. Manage system health.
 
 ---
 
