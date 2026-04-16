@@ -93,6 +93,24 @@ Backend dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse trac
 
 ---
 
+## Data Coverage
+
+The solution uses official regulatory and standards documents as source material. Chunks are created at approximately **1,000 characters with 150-character overlap** and stored as Pinecone records. According to the final report, total stored records across all namespaces are **3,600**. :contentReference[oaicite:7]{index=7}
+
+### Namespace Summary
+
+| Framework | Namespaces | Records / Chunks |
+|---|---|---:|
+| GDPR | `gdpr_pdf`, `gdpr_structured` | 915 |
+| HIPAA | `hipaa_pdf`, `hipaa_structured` | 396 |
+| NIST | `nist_pdf`, `nist_csf_pdf` | 2,289 |
+| **Total** | All namespaces | **3,600** |
+
+
+
+
+
+
 ## Key Features
 
 - **Multi-framework support** for:
@@ -138,21 +156,6 @@ This solution is relevant for:
 - **Regulated industries** such as healthcare, pharma, life sciences, CROs, and organizations handling EU personal data :contentReference[oaicite:3]{index=3}
 
 ---
-## Data Coverage
-
-The solution uses official regulatory and standards documents as source material. Chunks are created at approximately **1,000 characters with 150-character overlap** and stored as Pinecone records. According to the final report, total stored records across all namespaces are **3,600**. :contentReference[oaicite:7]{index=7}
-
-### Namespace Summary
-
-| Framework | Namespaces | Records / Chunks |
-|---|---|---:|
-| GDPR | `gdpr_pdf`, `gdpr_structured` | 915 |
-| HIPAA | `hipaa_pdf`, `hipaa_structured` | 396 |
-| NIST | `nist_pdf`, `nist_csf_pdf` | 2,289 |
-| **Total** | All namespaces | **3,600** |
-
-
-
 
 
 ---
