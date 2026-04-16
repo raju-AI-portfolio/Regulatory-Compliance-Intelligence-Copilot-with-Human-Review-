@@ -106,54 +106,26 @@ The solution uses official regulatory and standards documents as source material
 | NIST | `nist_pdf`, `nist_csf_pdf` | 2,289 |
 | **Total** | All namespaces | **3,600** |
 
-
-
-
-
-
-## Key Features
-
-- **Multi-framework support** for:
-  - GDPR
-  - HIPAA
-  - NIST / NIST CSF
-
-- **Grounded RAG pipeline**
-  - semantic retrieval from Pinecone
-  - reranking with Cohere
-  - grounded answer generation with OpenAI
-
-- **Citation-aware responses**
-  - GDPR article-style references
-  - HIPAA CFR references
-  - NIST reference normalization
-
-- **Confidence-based governance**
-  - generated vs pending review decision
-  - conservative handling of ambiguous cases
-
-- **Human review workflow**
-  - pending review alerts sent to Telegram
-  - reviewer can approve or correct
-  - reviewed answer stored and retrievable
-
-- **Auditability**
-  - Airtable logging for question, answer, citations, namespaces, confidence, and status
-
-- **Guardrails**
-  - hard block and policy-based classification for unsafe, off-topic, prompt-extraction, or bypass attempts
-
 ---
+## ✨ Key Features
 
-## Business Use Cases
+| Feature | Description |
+|---|---|
+| 🔍 **Multi-Framework RAG** | Covers GDPR, HIPAA, and NIST from 3,600 embedded regulatory chunks |
+| 📎 **Grounded Citations** | Every answer cites specific Articles, CFR sections, or NIST controls |
+| 🤖 **Semantic Reranking** | Cohere reranks retrieved evidence before answer generation |
+| 🧠 **Multi-Query Expansion** | Rewrites queries into 3 variants to maximise semantic recall |
+| 📊 **Confidence Scoring** | Combines rerank strength, citation presence, and consistency signals |
+| 🚦 **Human Review Routing** | Low-confidence answers are escalated to a compliance officer via Telegram |
+| 🔒 **Policy Guardrails** | Three-class classifier blocks prompt injections, jailbreaks, and off-topic requests |
+| 📋 **Airtable Audit Trail** | Every interaction — question, answer, citations, confidence, status — is logged |
+| ⚡ **Fast Responses** | 11.8s average end-to-end latency, well within interactive use requirements |
 
-This solution is relevant for:
 
-- **Healthcare organizations** answering HIPAA-related privacy and security questions
-- **Data privacy teams** handling GDPR rights, lawful basis, consent, and breach queries
-- **Security and governance teams** working with NIST-aligned cybersecurity questions
-- **Internal compliance helpdesks** that require faster answers with source traceability
-- **Regulated industries** such as healthcare, pharma, life sciences, CROs, and organizations handling EU personal data :contentReference[oaicite:3]{index=3}
+
+
+
+
 
 ---
 
