@@ -122,64 +122,9 @@ The solution uses official regulatory and standards documents as source material
 | ⚡ **Fast Responses** | 11.8s average end-to-end latency, well within interactive use requirements |
 
 
-
-
-
-
-
 ---
 
 
----
-## Architecture
-
-The project follows a multi-stage RAG architecture:
-
-### Frontend
-- **Streamlit**
-- Provides:
-  - question entry
-  - answer display
-  - reviewed answer lookup by record ID
-
-### Backend
-- **FastAPI**
-- Handles:
-  - request validation
-  - framework routing
-  - retrieval orchestration
-  - answer generation
-  - confidence scoring
-  - audit logging
-
-### Vector Database
-- **Pinecone**
-- Stores embedded chunks across framework-specific namespaces
-
-### Reranking
-- **Cohere**
-- Reranks retrieved evidence before answer generation
-
-### LLM
-- **OpenAI GPT-4.1 mini**
-- Generates grounded answers only from retrieved evidence
-
-### Governance Layer
-- **Airtable**
-- Stores:
-  - question
-  - answer
-  - citations
-  - confidence
-  - namespaces
-  - review status
-  - final reviewed answer
-
-### Automation / Review
-- **n8n**
-  - sends pending-review alerts
-- **Python Telegram Bot + Airtable**
-  - supports reviewer approval and correction workflow :contentReference[oaicite:4]{index=4}
 
 ---
 
