@@ -292,7 +292,8 @@ The final implemented system is a functioning, governance-aware regulatory compl
 **Streamlit Frontend Look:**
 
 <img width="1366" height="597" alt="image" src="https://github.com/user-attachments/assets/4053ccb8-9d8a-43a9-b75c-0a9df53ad867" />
-<img width="608" height="597" alt="image" src="https://github.com/user-attachments/assets/fca1afee-3f33-45ea-93d4-7fbda72f586f" />
+<img width="1171" height="748" alt="image" src="https://github.com/user-attachments/assets/8ced1a12-65cd-4e17-b558-fc4ea9c9327f" />
+
 
 
 
