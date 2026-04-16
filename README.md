@@ -95,7 +95,7 @@ Backend dashboard : Upload new PDFs. Run RAGAS evaluation. Monitor Langfuse trac
 
 ## Data Coverage
 
-The solution uses official regulatory and standards documents as source material. Chunks are created at approximately **1,000 characters with 150-character overlap** and stored as Pinecone records. According to the final report, total stored records across all namespaces are **3,600**. :contentReference[oaicite:7]{index=7}
+The solution uses official regulatory and standards documents as source material. Chunks are created at approximately **1,000 characters with 150-character overlap** and stored as Pinecone records. According to the final report, total stored records across all namespaces are **3,600**.
 
 ### Namespace Summary
 
@@ -159,8 +159,7 @@ The solution uses official regulatory and standards documents as source material
 
 The process flow diagram in the final report shows the complete sequence from:
 
-**User / UI → FastAPI → Framework Router → Pinecone Retrieval → Cohere Reranking → OpenAI Answer Generation → Confidence & Review Decision → Airtable Audit Trail → Telegram Alert → Reviewer Approval/Correction → Final Reviewed Answer in Streamlit**. The visual workflow is presented in the diagram on page 6 of the report. :contentReference[oaicite:6]{index=6}
-
+**User / UI → FastAPI → Framework Router → Pinecone Retrieval → Cohere Reranking → OpenAI Answer Generation → Confidence & Review Decision → Airtable Audit Trail → Telegram Alert → Reviewer Approval/Correction → Final Reviewed Answer in Streamlit**. The visual workflow is presented in the diagram on page 6 of the report. 
 ---
 
 <img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/146ecee2-442d-444d-aa5d-e43dc48fc4f5" />
@@ -188,7 +187,7 @@ For low-confidence or ambiguous cases:
 - corrected output is written back to Airtable
 - the final answer can be fetched in the UI by record ID
 
-This design improves both auditability and operational safety in regulated use cases. :contentReference[oaicite:8]{index=8}
+This design improves both auditability and operational safety in regulated use cases.
 
 ---
 
@@ -208,7 +207,7 @@ The project includes a pre-retrieval guardrail layer to prevent unsafe or irrele
 - unsafe or off-topic creative prompts
 - private-data extraction attempts
 
-In the current implementation, both `block` and `review` outcomes stop retrieval before the system proceeds, which provides safer behavior for suspicious inputs. :contentReference[oaicite:9]{index=9}
+In the current implementation, both `block` and `review` outcomes stop retrieval before the system proceeds, which provides safer behavior for suspicious inputs. 
 
 ---
 
@@ -262,7 +261,7 @@ A subset of 15 questions across frameworks was evaluated using:
 | Prompt Injection / Jailbreak | 6 | **100%** |
 | Ambiguous / Cross-Framework | 10 | Correct escalation routing |
 
-These results indicate strong grounding, with lower correctness in some cases driven more by retrieval coverage limits than by hallucination. :contentReference[oaicite:11]{index=11}
+These results indicate strong grounding, with lower correctness in some cases driven more by retrieval coverage limits than by hallucination. 
 
 ---
 
@@ -292,7 +291,7 @@ The final implemented system is a functioning, governance-aware regulatory compl
 **Streamlit Frontend Look:**
 
 <img width="1366" height="597" alt="image" src="https://github.com/user-attachments/assets/4053ccb8-9d8a-43a9-b75c-0a9df53ad867" />
-<img width="1171" height="748" alt="image" src="https://github.com/user-attachments/assets/8ced1a12-65cd-4e17-b558-fc4ea9c9327f" />
+<img width="1273" height="748" alt="image" src="https://github.com/user-attachments/assets/a49a3020-2845-484b-9fd0-0d7cb502b474" />
 
 
 
