@@ -164,8 +164,8 @@ The process flow diagram in the final report shows the complete sequence from:
 **User / UI → FastAPI → Framework Router → Pinecone Retrieval → Cohere Reranking → OpenAI Answer Generation → Confidence & Review Decision → Airtable Audit Trail → Telegram Alert → Reviewer Approval/Correction → Final Reviewed Answer in Streamlit**. The visual workflow is presented in the diagram on page 6 of the report. :contentReference[oaicite:6]{index=6}
 
 ---
+![Uploading image.png…]()
 
-<img width="1360" height="3240" alt="regulatory_compliance_rag_flow_final" src="https://github.com/user-attachments/assets/9503c4f7-41fd-45ad-bbac-6bcd99c153c0" />
 
 ---
 
