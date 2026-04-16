@@ -169,21 +169,6 @@ The process flow diagram in the final report shows the complete sequence from:
 
 ---
 
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Frontend | Streamlit |
-| Backend | FastAPI |
-| Vector Store | Pinecone |
-| Embeddings | Sentence Transformers / OpenAI embedding workflow |
-| Reranking | Cohere |
-| LLM | OpenAI GPT-4.1 mini |
-| Governance | Airtable |
-| Automation | n8n |
-| Human Review | Python Telegram Bot |
-| Source Processing | PDF ingestion + structured JSON ingestion |
-
 ---
 
 ## Governance and Human Review
