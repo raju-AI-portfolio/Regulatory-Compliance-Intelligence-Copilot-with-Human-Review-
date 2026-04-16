@@ -289,6 +289,11 @@ The final implemented system is a functioning, governance-aware regulatory compl
 
 ---
 
+**Streamlit Frontend Look:**
+
+<img width="1366" height="597" alt="image" src="https://github.com/user-attachments/assets/4ff32624-c03a-4b52-93dc-4e63777799da" />
+
+
 ## Repository Structure
 
 A typical structure for this project is organized around ingestion, backend services, UI, and data layers.
@@ -316,6 +321,3 @@ A typical structure for this project is organized around ingestion, backend serv
 └── README.md
 
 
-**Streamlit Frontend Look:**
-
-<img width="1366" height="597" alt="image" src="https://github.com/user-attachments/assets/992edae3-7e35-4940-8927-4e2813aa9e4e" />
