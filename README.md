@@ -165,9 +165,6 @@ The process flow diagram in the final report shows the complete sequence from:
 
 ---
 
-<img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/15636aa0-a47c-473a-a4a4-46b9515b9292" />
-
-
 
 ---
 
