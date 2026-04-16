@@ -21,295 +21,321 @@
 
 ---
 
-## 🎯 Problem Statement
 
-Compliance teams in regulated industries spend enormous time manually answering the same GDPR, HIPAA, and NIST questions — inconsistently, slowly, and without a traceable audit trail. Generic chatbots make this worse by generating plausible-sounding but unsupported answers, creating serious legal exposure.
+# Regulatory Compliance Intelligence Copilot
 
-**This project solves that.** Instead of hallucinating, it retrieves — grounding every answer in authoritative regulatory source documents, normalising citations, and escalating uncertain cases to a human compliance officer before they reach end users.
+Grounded Multi-Framework RAG for GDPR, HIPAA, and NIST with Audit Logging and Human Review Support
+
+## Overview
+
+The **Regulatory Compliance Intelligence Copilot** is a production-oriented, evidence-grounded Question & Answer system designed to support regulatory compliance use cases across **GDPR**, **HIPAA**, and **NIST**. It combines Retrieval-Augmented Generation (RAG), semantic reranking, governance logging, confidence-based escalation, and human review to deliver answers that are traceable, auditable, and safer than generic chatbot responses.
+
+Unlike a standard LLM chatbot, this system does **not** rely on unconstrained model memory for compliance answers. Instead, it retrieves evidence from approved source documents, reranks the evidence, generates a grounded response, normalizes citations, computes confidence, and routes uncertain cases for reviewer approval or correction. :contentReference[oaicite:1]{index=1}
 
 ---
 
-## ✨ Key Features
+## Problem Statement
 
-| Feature | Description |
+Compliance, privacy, and information security teams often need to answer repeated questions on data privacy, healthcare regulation, and security frameworks. Traditional approaches are slow, difficult to standardize, and weak from an audit perspective. Generic chatbots are not sufficient for this domain because unsupported answers can create legal, regulatory, and operational risk. :contentReference[oaicite:2]{index=2}
+
+This project addresses that problem by building a compliance assistant that:
+
+- retrieves answers from approved regulatory source documents
+- generates grounded responses with citations
+- uses confidence-based decisioning to separate self-service answers from uncertain cases
+- escalates low-confidence cases to human review
+- stores a full audit trail for every interaction
+
+---
+
+## Key Features
+
+- **Multi-framework support** for:
+  - GDPR
+  - HIPAA
+  - NIST / NIST CSF
+
+- **Grounded RAG pipeline**
+  - semantic retrieval from Pinecone
+  - reranking with Cohere
+  - grounded answer generation with OpenAI
+
+- **Citation-aware responses**
+  - GDPR article-style references
+  - HIPAA CFR references
+  - NIST reference normalization
+
+- **Confidence-based governance**
+  - generated vs pending review decision
+  - conservative handling of ambiguous cases
+
+- **Human review workflow**
+  - pending review alerts sent to Telegram
+  - reviewer can approve or correct
+  - reviewed answer stored and retrievable
+
+- **Auditability**
+  - Airtable logging for question, answer, citations, namespaces, confidence, and status
+
+- **Guardrails**
+  - hard block and policy-based classification for unsafe, off-topic, prompt-extraction, or bypass attempts
+
+---
+
+## Business Use Cases
+
+This solution is relevant for:
+
+- **Healthcare organizations** answering HIPAA-related privacy and security questions
+- **Data privacy teams** handling GDPR rights, lawful basis, consent, and breach queries
+- **Security and governance teams** working with NIST-aligned cybersecurity questions
+- **Internal compliance helpdesks** that require faster answers with source traceability
+- **Regulated industries** such as healthcare, pharma, life sciences, CROs, and organizations handling EU personal data :contentReference[oaicite:3]{index=3}
+
+---
+
+## Architecture
+
+The project follows a multi-stage RAG architecture:
+
+### Frontend
+- **Streamlit**
+- Provides:
+  - question entry
+  - answer display
+  - reviewed answer lookup by record ID
+
+### Backend
+- **FastAPI**
+- Handles:
+  - request validation
+  - framework routing
+  - retrieval orchestration
+  - answer generation
+  - confidence scoring
+  - audit logging
+
+### Vector Database
+- **Pinecone**
+- Stores embedded chunks across framework-specific namespaces
+
+### Reranking
+- **Cohere**
+- Reranks retrieved evidence before answer generation
+
+### LLM
+- **OpenAI GPT-4.1 mini**
+- Generates grounded answers only from retrieved evidence
+
+### Governance Layer
+- **Airtable**
+- Stores:
+  - question
+  - answer
+  - citations
+  - confidence
+  - namespaces
+  - review status
+  - final reviewed answer
+
+### Automation / Review
+- **n8n**
+  - sends pending-review alerts
+- **Python Telegram Bot + Airtable**
+  - supports reviewer approval and correction workflow :contentReference[oaicite:4]{index=4}
+
+---
+
+## End-to-End Workflow
+
+The system processes every query through the following stages:
+
+1. **Request Intake and Validation**  
+   FastAPI validates the input request and reads the question, optional user ID, and framework selector.
+
+2. **Framework Routing**  
+   The system identifies whether the question relates to GDPR, HIPAA, NIST, or multiple frameworks.
+
+3. **Multi-Query Expansion**  
+   The question is rewritten into multiple variants to improve semantic recall.
+
+4. **Namespace Selection**  
+   Relevant Pinecone namespaces are selected based on detected framework(s).
+
+5. **Semantic Retrieval**  
+   Candidate chunks are retrieved from Pinecone using vector similarity.
+
+6. **Deduplication and Reranking**  
+   Duplicate chunks are removed and the candidate evidence is reranked using Cohere.
+
+7. **Grounded Answer Generation**  
+   OpenAI generates an answer strictly from the reranked evidence.
+
+8. **Citation Normalization**  
+   Citations are standardized into readable regulatory reference formats.
+
+9. **Confidence Scoring and Review Decision**  
+   The system combines retrieval strength, citation signals, and answer consistency to compute confidence and assign a status.
+
+10. **Human Review**  
+   Pending-review cases are escalated to the compliance officer through Telegram.
+
+11. **Airtable Logging and Reviewed Answer Retrieval**  
+   Full interaction metadata is logged, and final reviewed answers can be retrieved later by record ID. :contentReference[oaicite:5]{index=5}
+
+---
+
+## Process Flow
+
+The process flow diagram in the final report shows the complete sequence from:
+
+**User / UI → FastAPI → Framework Router → Pinecone Retrieval → Cohere Reranking → OpenAI Answer Generation → Confidence & Review Decision → Airtable Audit Trail → Telegram Alert → Reviewer Approval/Correction → Final Reviewed Answer in Streamlit**. The visual workflow is presented in the diagram on page 6 of the report. :contentReference[oaicite:6]{index=6}
+
+---
+
+## Data Coverage
+
+The solution uses official regulatory and standards documents as source material. Chunks are created at approximately **1,000 characters with 150-character overlap** and stored as Pinecone records. According to the final report, total stored records across all namespaces are **3,600**. :contentReference[oaicite:7]{index=7}
+
+### Namespace Summary
+
+| Framework | Namespaces | Records / Chunks |
+|---|---|---:|
+| GDPR | `gdpr_pdf`, `gdpr_structured` | 915 |
+| HIPAA | `hipaa_pdf`, `hipaa_structured` | 396 |
+| NIST | `nist_pdf`, `nist_csf_pdf` | 2,289 |
+| **Total** | All namespaces | **3,600** |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
 |---|---|
-| 🔍 **Multi-Framework RAG** | Covers GDPR, HIPAA, and NIST from 3,600 embedded regulatory chunks |
-| 📎 **Grounded Citations** | Every answer cites specific Articles, CFR sections, or NIST controls |
-| 🤖 **Semantic Reranking** | Cohere reranks retrieved evidence before answer generation |
-| 🧠 **Multi-Query Expansion** | Rewrites queries into 3 variants to maximise semantic recall |
-| 📊 **Confidence Scoring** | Combines rerank strength, citation presence, and consistency signals |
-| 🚦 **Human Review Routing** | Low-confidence answers are escalated to a compliance officer via Telegram |
-| 🔒 **Policy Guardrails** | Three-class classifier blocks prompt injections, jailbreaks, and off-topic requests |
-| 📋 **Airtable Audit Trail** | Every interaction — question, answer, citations, confidence, status — is logged |
-| ⚡ **Fast Responses** | 11.8s average end-to-end latency, well within interactive use requirements |
+| Frontend | Streamlit |
+| Backend | FastAPI |
+| Vector Store | Pinecone |
+| Embeddings | Sentence Transformers / OpenAI embedding workflow |
+| Reranking | Cohere |
+| LLM | OpenAI GPT-4.1 mini |
+| Governance | Airtable |
+| Automation | n8n |
+| Human Review | Python Telegram Bot |
+| Source Processing | PDF ingestion + structured JSON ingestion |
 
 ---
 
-## 🏗️ Architecture
+## Governance and Human Review
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        USER / UI LAYER                          │
-│   Streamlit UI  →  FastAPI /query  →  Framework Router          │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│                    INTELLIGENCE LAYER (FastAPI)                  │
-│  Validate → Detect Framework → Multi-Query Expansion            │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│                    RETRIEVAL (Pinecone)                          │
-│  6 Namespaces: gdpr_pdf · gdpr_structured · hipaa_pdf           │
-│                hipaa_structured · nist_pdf · nist_csf_pdf        │
-│  3,600 total embedded chunks                                     │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│                    RERANKING (Cohere)                            │
-│  Deduplicate → Semantic Rerank → Keep Top-5 Evidence Chunks     │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│               ANSWER GENERATION (OpenAI GPT-4.1-mini)           │
-│  Grounded Prompt → Generate → Normalise Citations               │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-              ┌──────────────▼──────────────┐
-              │    Confidence Score ≥ 0.85?  │
-              └──────┬──────────────┬────────┘
-                     │ YES          │ NO
-              ┌──────▼──────┐ ┌────▼──────────────────┐
-              │  Auto-serve │ │  Escalate → n8n →      │
-              │  to user    │ │  Telegram → Officer    │
-              └──────┬──────┘ │  Review → Airtable     │
-                     │        └────────────────────────┘
-              ┌──────▼────────────────────────────────────────────┐
-              │              AIRTABLE AUDIT TRAIL                  │
-              │  Question · Answer · Citations · Confidence ·      │
-              │  Status · Namespaces · Record ID                   │
-              └───────────────────────────────────────────────────┘
-```
+A core differentiator of this project is its governance-aware design.
+
+### Airtable Audit Trail
+Every interaction is logged with:
+- question
+- generated answer
+- citations
+- selected namespaces
+- confidence score
+- status
+- reviewed / final answer fields
+
+### Human Review Flow
+For low-confidence or ambiguous cases:
+- an alert is sent to Telegram
+- the compliance officer can approve or correct the answer
+- corrected output is written back to Airtable
+- the final answer can be fetched in the UI by record ID
+
+This design improves both auditability and operational safety in regulated use cases. :contentReference[oaicite:8]{index=8}
 
 ---
 
-## ⚙️ 10-Stage RAG Pipeline
+## Guardrails
 
-```
-1. Request Intake & Validation      →   FastAPI schema validation
-2. Framework Routing                →   GDPR / HIPAA / NIST / Multi-framework
-3. Multi-Query Expansion            →   3 semantic query variants
-4. Namespace Selection              →   PDF + structured namespaces per framework
-5. Semantic Retrieval               →   Pinecone cosine similarity search
-6. Deduplication & Reranking        →   Cohere semantic reranking
-7. Grounded Answer Generation       →   OpenAI from retrieved chunks only
-8. Citation Normalisation           →   GDPR Art. / HIPAA CFR / NIST CSF format
-9. Confidence Scoring & Routing     →   Auto-approve or pending_review
-10. Airtable Logging & Retrieval    →   Full audit trail, reviewed answer by record ID
-```
+The project includes a pre-retrieval guardrail layer to prevent unsafe or irrelevant requests from entering the compliance pipeline.
+
+### Supported decision classes
+- **allow**
+- **block**
+- **review**
+
+### Current protections include
+- prompt injection attempts
+- jailbreak / prompt reveal requests
+- workaround and bypass requests
+- unsafe or off-topic creative prompts
+- private-data extraction attempts
+
+In the current implementation, both `block` and `review` outcomes stop retrieval before the system proceeds, which provides safer behavior for suspicious inputs. :contentReference[oaicite:9]{index=9}
 
 ---
 
-## 📊 Validation & KPI Results
+## Validation and Evaluation
 
-### Headline KPIs — Pure Regulatory Q&A (45 questions)
+The system was evaluated using two complementary approaches:
+
+### 1. Manual / LLM-as-Judge Validation
+The validation workbook separates test cases into:
+- **Pure Regulatory Q&A**
+- **Ambiguous / Cross-Framework**
+- **Guardrails**
+
+This prevents misleading interpretation by evaluating each class of question with appropriate criteria. :contentReference[oaicite:10]{index=10}
+
+### 2. RAGAS-Based Automated Evaluation
+A subset of 15 questions across frameworks was evaluated using:
+- **Faithfulness**
+- **Answer Correctness**
+
+#### Reported RAGAS Results
+- **Average Faithfulness:** 0.905
+- **Average Answer Correctness:** 0.773
+- **Faithfulness pass rate (95% threshold):** 100% (15/15)
+
+These results indicate strong grounding, with lower correctness in some cases driven more by retrieval coverage limits than by hallucination. :contentReference[oaicite:11]{index=11}
+
+---
+
+## Final KPI Highlights
+
+According to the final project report, the system achieved the following headline results:
 
 | Metric | Target | Actual | Status |
-|---|---|---|---|
-| ✅ Answer Accuracy | ≥ 90% | **93.3%** | **PASS** |
-| ✅ Self-Service Rate | ≥ 80% | **86.7%** | **PASS** |
-| ✅ Response Time | < 120s | **11.8s avg** | **PASS** |
-| ✅ Validation Coverage | 100% | **100%** | **PASS** |
-| ✅ RAGAS Faithfulness | > 90% | **90.5%** | **PASS** |
-| ⚠️ Source Traceability | 100% | 80% | In Progress |
-| ⚠️ RAGAS Correctness | > 90% | 77.3% | In Progress |
+|---|---:|---:|---|
+| Answer Accuracy | ≥ 90% | 93.3% | PASS |
+| Self-Service Rate | ≥ 80% | 86.7% | PASS |
+| Response Time | < 120 sec | 11.8 sec avg | PASS |
+| Source Traceability | 100% | 80% | Below Target |
+| Validation Coverage | 100% | 100% | PASS |
+| RAGAS Faithfulness | > 90% | 90.5% | PASS |
+| RAGAS Correctness | > 90% | 77.3% | Below Target |
 
-### RAGAS Automated Evaluation (15-question subset)
-
-| Framework | Faithfulness | Answer Correctness |
-|---|---|---|
-| GDPR | 93.1% | 79.5% |
-| HIPAA | 88.2% | 86.6% |
-| NIST | 90.1% | 65.7% |
-| **Average** | **90.5%** | **77.3%** |
-
-> NIST correctness gap reflects chunk-limited scope vs. exhaustive reference answers — not factual errors. Zero major hallucinations detected across all Pure Regulatory Q&A tests.
-
-### Guardrail Performance
-
-| Test Category | Questions | Block Success |
-|---|---|---|
-| Prompt Injection / Jailbreak | 6 | **100%** |
-| Ambiguous / Cross-Framework | 10 | Correct escalation routing |
+The report highlights strong answer quality, good latency, and solid governance readiness, while also noting improvement opportunities in source traceability consistency and mixed-framework / NIST-heavy answers. :contentReference[oaicite:12]{index=12}
 
 ---
 
-## 🧰 Tech Stack
+## Repository Structure
 
-| Layer | Technology | Purpose |
-|---|---|---|
-| **Frontend** | Streamlit | Query entry, answer display, review lookup |
-| **Backend** | FastAPI | Orchestration, routing, confidence scoring |
-| **Vector DB** | Pinecone | 3,600 regulatory chunk embeddings across 6 namespaces |
-| **Reranking** | Cohere | Semantic evidence reranking |
-| **LLM** | OpenAI GPT-4.1-mini | Grounded answer generation |
-| **Governance** | Airtable | Full audit trail and reviewed-answer storage |
-| **Automation** | n8n | Pending review alerts to Telegram |
-| **Human Review** | Python Telegram Bot | Officer review, correction, Airtable write-back |
+A typical structure for this project is organized around ingestion, backend services, UI, and data layers.
 
----
-
-## 📁 Data Coverage
-
-| Framework | Namespaces | Chunks |
-|---|---|---|
-| GDPR | `gdpr_pdf`, `gdpr_structured` | 915 (487 PDF + 428 structured) |
-| HIPAA | `hipaa_pdf`, `hipaa_structured` | 396 (390 PDF + 6 structured) |
-| NIST | `nist_pdf`, `nist_csf_pdf` | 2,289 (2,190 general + 99 CSF) |
-| **Total** | 6 namespaces | **3,600 chunks** |
-
-> All source documents downloaded from official government and standards bodies. Chunked at ~1,000 characters with 150-character overlap.
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-Python 3.10+
-Pinecone account + API key
-OpenAI API key
-Cohere API key
-Airtable account + base
-Telegram bot token (for human review)
-n8n instance (for automation)
-```
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/regulatory-compliance-copilot.git
-cd regulatory-compliance-copilot
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Configuration
-
-```bash
-# Copy environment template
-cp .env.example .env
-
-# Fill in your credentials
-OPENAI_API_KEY=your_openai_key
-PINECONE_API_KEY=your_pinecone_key
-COHERE_API_KEY=your_cohere_key
-AIRTABLE_API_KEY=your_airtable_key
-AIRTABLE_BASE_ID=your_base_id
-TELEGRAM_BOT_TOKEN=your_telegram_token
-```
-
-### Run the Application
-
-```bash
-# Start the FastAPI backend
-uvicorn app.main:app --reload --port 8000
-
-# In a separate terminal, start the Streamlit frontend
-streamlit run frontend/app.py
-```
-
----
-
-## 📂 Project Structure
-
-```
-regulatory-compliance-copilot/
+```text
+.
 ├── app/
-│   ├── main.py                 # FastAPI application entry point
-│   ├── routers/
-│   │   ├── query.py            # /query endpoint — main RAG pipeline
-│   │   └── review.py           # /review endpoint — Airtable answer retrieval
+│   ├── api/
+│   ├── core/
 │   ├── services/
-│   │   ├── retrieval.py        # Pinecone namespace retrieval
-│   │   ├── reranker.py         # Cohere reranking
-│   │   ├── generator.py        # OpenAI grounded answer generation
-│   │   ├── confidence.py       # Confidence scoring logic
-│   │   └── guardrails.py       # Policy-based input guardrail layer
-│   └── utils/
-│       ├── citations.py        # Citation normalisation
-│       ├── framework_router.py # GDPR/HIPAA/NIST routing logic
-│       └── airtable_logger.py  # Audit trail logging
-├── frontend/
-│   └── app.py                  # Streamlit UI
+│   └── main.py
 ├── ingestion/
-│   ├── chunker.py              # Document chunking pipeline
-│   └── embedder.py             # Embedding and Pinecone upload
-├── telegram_bot/
-│   └── review_bot.py           # Human review bot
-├── validation/
-│   ├── manual_workbook.xlsx    # LLM-as-judge validation results
-│   └── ragas_eval.py           # RAGAS automated evaluation script
+│   ├── pdf/
+│   └── notion/ or structured/
+├── data/
+│   ├── raw/
+│   │   ├── gdpr/
+│   │   ├── hipaa/
+│   │   ├── nist/
+│   │   └── nist_csf/
+│   └── structured/
+├── streamlit_app.py
 ├── requirements.txt
 ├── .env.example
 └── README.md
-```
-
----
-
-## 🔒 Guardrails
-
-The system implements a three-class policy guardrail layer before any retrieval occurs:
-
-- **Hard-block**: Prompt injection, jailbreak attempts, unsafe requests, explicit off-topic creative prompts
-- **Policy-block**: Intent classification for data exfiltration workarounds, private data extraction, misleading compliance framing
-- **Review**: Borderline cases escalated for human inspection rather than blocked outright
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Improve NIST answer correctness with better chunking strategies
-- [ ] Add structured review dashboards and SLA tracking in Airtable
-- [ ] Role-based authentication and per-user audit trails
-- [ ] Hosted deployment with distributed logging and performance alerts
-- [ ] Expand to additional frameworks (SOC 2, ISO 27001, CCPA)
-- [ ] Multi-language regulatory source support
-
----
-
-## 🎓 Academic Context
-
-> **TalentSprint Capstone 2026** — Applied Generative AI and Agentic AI  
-> Project 3 | Group-5 | Submission: April 15, 2026
-
-This project was developed as the capstone deliverable for the Applied Generative AI and Agentic AI programme, demonstrating advanced RAG engineering, LLMOps integration, and production-grade governance patterns applicable to enterprise compliance use cases.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome. Please open an issue first to discuss proposed changes.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-
-**Built with precision for regulated industries · Evidence-grounded · Audit-ready**
-
-*If this project helped you, please consider giving it a ⭐*
-
-</div>
