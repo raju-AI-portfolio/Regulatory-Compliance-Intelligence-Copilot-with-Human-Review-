@@ -154,10 +154,6 @@ The solution uses official regulatory and standards documents as source material
 10. Airtable Logging & Retrieval    →   Full audit trail, reviewed answer by record ID
 ```
 ---
-<img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/146ecee2-442d-444d-aa5d-e43dc48fc4f5" />
-
-
----
 
 ## Process Flow
 
@@ -166,7 +162,8 @@ The process flow diagram in the final report shows the complete sequence from:
 **User / UI → FastAPI → Framework Router → Pinecone Retrieval → Cohere Reranking → OpenAI Answer Generation → Confidence & Review Decision → Airtable Audit Trail → Telegram Alert → Reviewer Approval/Correction → Final Reviewed Answer in Streamlit**. The visual workflow is presented in the diagram on page 6 of the report. :contentReference[oaicite:6]{index=6}
 
 ---
----
+
+<img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/146ecee2-442d-444d-aa5d-e43dc48fc4f5" />
 
 ---
 
