@@ -30,7 +30,7 @@ Grounded Multi-Framework RAG for GDPR, HIPAA, and NIST with Audit Logging and Hu
 
 The **Regulatory Compliance Intelligence Copilot** is a production-oriented, evidence-grounded Question & Answer system designed to support regulatory compliance use cases across **GDPR**, **HIPAA**, and **NIST**. It combines Retrieval-Augmented Generation (RAG), semantic reranking, governance logging, confidence-based escalation, and human review to deliver answers that are traceable, auditable, and safer than generic chatbot responses.
 
-Unlike a standard LLM chatbot, this system does **not** rely on unconstrained model memory for compliance answers. Instead, it retrieves evidence from approved source documents, reranks the evidence, generates a grounded response, normalizes citations, computes confidence, and routes uncertain cases for reviewer approval or correction. :contentReference[oaicite:1]{index=1}
+Unlike a standard LLM chatbot, this system does **not** rely on unconstrained model memory for compliance answers. Instead, it retrieves evidence from approved source documents, reranks the evidence, generates a grounded response, normalizes citations, computes confidence, and routes uncertain cases for reviewer approval or correction.
 
 ---
 
