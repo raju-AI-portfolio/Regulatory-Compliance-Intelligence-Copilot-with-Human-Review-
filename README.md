@@ -154,6 +154,8 @@ The solution uses official regulatory and standards documents as source material
 10. Airtable Logging & Retrieval    →   Full audit trail, reviewed answer by record ID
 ```
 ---
+<img width="379" height="703" alt="Screenshot 2026-04-16 at 7 32 45 PM" src="https://github.com/user-attachments/assets/146ecee2-442d-444d-aa5d-e43dc48fc4f5" />
+
 
 ---
 
