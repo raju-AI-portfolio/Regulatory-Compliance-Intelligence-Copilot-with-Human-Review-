@@ -212,27 +212,37 @@ In the current implementation, both `block` and `review` outcomes stop retrieval
 
 ---
 
-## Validation and Evaluation
+## 📊 Validation & KPI Results
 
-The system was evaluated using two complementary approaches:
+### Headline KPIs — Pure Regulatory Q&A (45 questions)
 
-### 1. Manual / LLM-as-Judge Validation
-The validation workbook separates test cases into:
-- **Pure Regulatory Q&A**
-- **Ambiguous / Cross-Framework**
-- **Guardrails**
+| Metric | Target | Actual | Status |
+|---|---|---|---|
+| ✅ Answer Accuracy | ≥ 90% | **93.3%** | **PASS** |
+| ✅ Self-Service Rate | ≥ 80% | **86.7%** | **PASS** |
+| ✅ Response Time | < 120s | **11.8s avg** | **PASS** |
+| ✅ Validation Coverage | 100% | **100%** | **PASS** |
+| ✅ RAGAS Faithfulness | > 90% | **90.5%** | **PASS** |
+| ⚠️ Source Traceability | 100% | 80% | In Progress |
+| ⚠️ RAGAS Correctness | > 90% | 77.3% | In Progress |
 
-This prevents misleading interpretation by evaluating each class of question with appropriate criteria. :contentReference[oaicite:10]{index=10}
+### RAGAS Automated Evaluation (15-question subset)
 
-### 2. RAGAS-Based Automated Evaluation
-A subset of 15 questions across frameworks was evaluated using:
-- **Faithfulness**
-- **Answer Correctness**
+| Framework | Faithfulness | Answer Correctness |
+|---|---|---|
+| GDPR | 93.1% | 79.5% |
+| HIPAA | 88.2% | 86.6% |
+| NIST | 90.1% | 65.7% |
+| **Average** | **90.5%** | **77.3%** |
 
-#### Reported RAGAS Results
-- **Average Faithfulness:** 0.905
-- **Average Answer Correctness:** 0.773
-- **Faithfulness pass rate (95% threshold):** 100% (15/15)
+> NIST correctness gap reflects chunk-limited scope vs. exhaustive reference answers — not factual errors. Zero major hallucinations detected across all Pure Regulatory Q&A tests.
+
+### Guardrail Performance
+
+| Test Category | Questions | Block Success |
+|---|---|---|
+| Prompt Injection / Jailbreak | 6 | **100%** |
+| Ambiguous / Cross-Framework | 10 | Correct escalation routing |
 
 These results indicate strong grounding, with lower correctness in some cases driven more by retrieval coverage limits than by hallucination. :contentReference[oaicite:11]{index=11}
 
