@@ -1,0 +1,1478 @@
+[
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 1,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.400",
+    "citation": "HIPAA § 164.400",
+    "chunk_id": "hipaa_breach_notification.pdf_p1_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 1,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.400",
+    "citation": "HIPAA § 164.400",
+    "chunk_id": "hipaa_breach_notification.pdf_p1_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_breach_notification.pdf_p2_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_breach_notification.pdf_p2_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_breach_notification.pdf_p3_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_breach_notification.pdf_p3_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_breach_notification.pdf_p4_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_breach_notification.pdf_p4_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_breach_notification.pdf_p5_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_breach_notification.pdf_p5_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_breach_notification.pdf_p5_c3"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_breach_notification.pdf_p6_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_breach_notification.pdf_p6_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_breach_notification.pdf_p7_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_breach_notification.pdf_p7_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_breach_notification.pdf_p8_c1"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_breach_notification.pdf_p8_c2"
+  },
+  {
+    "source_file": "hipaa_breach_notification.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_breach_notification.pdf_p9_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 1,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.1",
+    "chunk_id": "hipaa_security_rule.pdf_p1_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 1,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.1",
+    "chunk_id": "hipaa_security_rule.pdf_p1_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_security_rule.pdf_p2_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_security_rule.pdf_p2_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_security_rule.pdf_p3_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_security_rule.pdf_p3_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_security_rule.pdf_p4_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_security_rule.pdf_p4_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_security_rule.pdf_p5_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_security_rule.pdf_p5_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_security_rule.pdf_p5_c3"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_security_rule.pdf_p6_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_security_rule.pdf_p6_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_security_rule.pdf_p7_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_security_rule.pdf_p7_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_security_rule.pdf_p8_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_security_rule.pdf_p8_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_security_rule.pdf_p9_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_security_rule.pdf_p9_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 10,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.10",
+    "chunk_id": "hipaa_security_rule.pdf_p10_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 10,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.10",
+    "chunk_id": "hipaa_security_rule.pdf_p10_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_security_rule.pdf_p11_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_security_rule.pdf_p11_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_security_rule.pdf_p11_c3"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_security_rule.pdf_p12_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_security_rule.pdf_p12_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_security_rule.pdf_p13_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_security_rule.pdf_p13_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_security_rule.pdf_p14_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_security_rule.pdf_p14_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_security_rule.pdf_p15_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_security_rule.pdf_p15_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_security_rule.pdf_p16_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_security_rule.pdf_p16_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_security_rule.pdf_p17_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_security_rule.pdf_p17_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_security_rule.pdf_p18_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_security_rule.pdf_p18_c2"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 19,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.19",
+    "chunk_id": "hipaa_security_rule.pdf_p19_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 20,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.20",
+    "chunk_id": "hipaa_security_rule.pdf_p20_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 21,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.21",
+    "chunk_id": "hipaa_security_rule.pdf_p21_c1"
+  },
+  {
+    "source_file": "hipaa_security_rule.pdf",
+    "page_number": 22,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.22",
+    "chunk_id": "hipaa_security_rule.pdf_p22_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 1,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.1",
+    "chunk_id": "hipaa_privacy_summary.pdf_p1_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_privacy_summary.pdf_p2_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_privacy_summary.pdf_p2_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 2,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.2",
+    "chunk_id": "hipaa_privacy_summary.pdf_p2_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_privacy_summary.pdf_p3_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_privacy_summary.pdf_p3_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_privacy_summary.pdf_p3_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 3,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.3",
+    "chunk_id": "hipaa_privacy_summary.pdf_p3_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_privacy_summary.pdf_p4_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_privacy_summary.pdf_p4_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_privacy_summary.pdf_p4_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_privacy_summary.pdf_p4_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 4,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.4",
+    "chunk_id": "hipaa_privacy_summary.pdf_p4_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_privacy_summary.pdf_p5_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_privacy_summary.pdf_p5_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_privacy_summary.pdf_p5_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_privacy_summary.pdf_p5_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 5,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.5",
+    "chunk_id": "hipaa_privacy_summary.pdf_p5_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_privacy_summary.pdf_p6_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_privacy_summary.pdf_p6_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_privacy_summary.pdf_p6_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 6,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.6",
+    "chunk_id": "hipaa_privacy_summary.pdf_p6_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_privacy_summary.pdf_p7_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_privacy_summary.pdf_p7_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_privacy_summary.pdf_p7_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 7,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.7",
+    "chunk_id": "hipaa_privacy_summary.pdf_p7_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_privacy_summary.pdf_p8_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_privacy_summary.pdf_p8_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_privacy_summary.pdf_p8_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_privacy_summary.pdf_p8_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 8,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.8",
+    "chunk_id": "hipaa_privacy_summary.pdf_p8_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_privacy_summary.pdf_p9_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_privacy_summary.pdf_p9_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_privacy_summary.pdf_p9_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 9,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.9",
+    "chunk_id": "hipaa_privacy_summary.pdf_p9_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 10,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.10",
+    "chunk_id": "hipaa_privacy_summary.pdf_p10_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 10,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.10",
+    "chunk_id": "hipaa_privacy_summary.pdf_p10_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 10,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.10",
+    "chunk_id": "hipaa_privacy_summary.pdf_p10_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 10,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.10",
+    "chunk_id": "hipaa_privacy_summary.pdf_p10_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_privacy_summary.pdf_p11_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_privacy_summary.pdf_p11_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_privacy_summary.pdf_p11_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 11,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.11",
+    "chunk_id": "hipaa_privacy_summary.pdf_p11_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_privacy_summary.pdf_p12_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_privacy_summary.pdf_p12_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_privacy_summary.pdf_p12_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_privacy_summary.pdf_p12_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 12,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.12",
+    "chunk_id": "hipaa_privacy_summary.pdf_p12_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_privacy_summary.pdf_p13_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_privacy_summary.pdf_p13_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_privacy_summary.pdf_p13_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_privacy_summary.pdf_p13_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 13,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.13",
+    "chunk_id": "hipaa_privacy_summary.pdf_p13_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_privacy_summary.pdf_p14_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_privacy_summary.pdf_p14_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_privacy_summary.pdf_p14_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_privacy_summary.pdf_p14_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 14,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.14",
+    "chunk_id": "hipaa_privacy_summary.pdf_p14_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_privacy_summary.pdf_p15_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_privacy_summary.pdf_p15_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_privacy_summary.pdf_p15_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_privacy_summary.pdf_p15_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 15,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.15",
+    "chunk_id": "hipaa_privacy_summary.pdf_p15_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_privacy_summary.pdf_p16_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_privacy_summary.pdf_p16_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_privacy_summary.pdf_p16_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_privacy_summary.pdf_p16_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 16,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.16",
+    "chunk_id": "hipaa_privacy_summary.pdf_p16_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_privacy_summary.pdf_p17_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_privacy_summary.pdf_p17_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_privacy_summary.pdf_p17_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_privacy_summary.pdf_p17_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 17,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.17",
+    "chunk_id": "hipaa_privacy_summary.pdf_p17_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_privacy_summary.pdf_p18_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_privacy_summary.pdf_p18_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_privacy_summary.pdf_p18_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_privacy_summary.pdf_p18_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 18,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.18",
+    "chunk_id": "hipaa_privacy_summary.pdf_p18_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 19,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.19",
+    "chunk_id": "hipaa_privacy_summary.pdf_p19_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 19,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.19",
+    "chunk_id": "hipaa_privacy_summary.pdf_p19_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 19,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.19",
+    "chunk_id": "hipaa_privacy_summary.pdf_p19_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 19,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.19",
+    "chunk_id": "hipaa_privacy_summary.pdf_p19_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 20,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.20",
+    "chunk_id": "hipaa_privacy_summary.pdf_p20_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 20,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.20",
+    "chunk_id": "hipaa_privacy_summary.pdf_p20_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 20,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "",
+    "citation": "HIPAA p.20",
+    "chunk_id": "hipaa_privacy_summary.pdf_p20_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 21,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 160.102",
+    "citation": "HIPAA § 160.102",
+    "chunk_id": "hipaa_privacy_summary.pdf_p21_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 21,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 160.102",
+    "citation": "HIPAA § 160.102",
+    "chunk_id": "hipaa_privacy_summary.pdf_p21_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 21,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 160.102",
+    "citation": "HIPAA § 160.102",
+    "chunk_id": "hipaa_privacy_summary.pdf_p21_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 21,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 160.102",
+    "citation": "HIPAA § 160.102",
+    "chunk_id": "hipaa_privacy_summary.pdf_p21_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 22,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.502",
+    "citation": "HIPAA § 164.502",
+    "chunk_id": "hipaa_privacy_summary.pdf_p22_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 22,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.502",
+    "citation": "HIPAA § 164.502",
+    "chunk_id": "hipaa_privacy_summary.pdf_p22_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 22,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.502",
+    "citation": "HIPAA § 164.502",
+    "chunk_id": "hipaa_privacy_summary.pdf_p22_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 23,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.532",
+    "citation": "HIPAA § 164.532",
+    "chunk_id": "hipaa_privacy_summary.pdf_p23_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 23,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.532",
+    "citation": "HIPAA § 164.532",
+    "chunk_id": "hipaa_privacy_summary.pdf_p23_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 23,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.532",
+    "citation": "HIPAA § 164.532",
+    "chunk_id": "hipaa_privacy_summary.pdf_p23_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 23,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.532",
+    "citation": "HIPAA § 164.532",
+    "chunk_id": "hipaa_privacy_summary.pdf_p23_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 23,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.532",
+    "citation": "HIPAA § 164.532",
+    "chunk_id": "hipaa_privacy_summary.pdf_p23_c5"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 24,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.524",
+    "citation": "HIPAA § 164.524",
+    "chunk_id": "hipaa_privacy_summary.pdf_p24_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 24,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.524",
+    "citation": "HIPAA § 164.524",
+    "chunk_id": "hipaa_privacy_summary.pdf_p24_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 24,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.524",
+    "citation": "HIPAA § 164.524",
+    "chunk_id": "hipaa_privacy_summary.pdf_p24_c3"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 24,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.524",
+    "citation": "HIPAA § 164.524",
+    "chunk_id": "hipaa_privacy_summary.pdf_p24_c4"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 25,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.506",
+    "citation": "HIPAA § 164.506",
+    "chunk_id": "hipaa_privacy_summary.pdf_p25_c1"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 25,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.506",
+    "citation": "HIPAA § 164.506",
+    "chunk_id": "hipaa_privacy_summary.pdf_p25_c2"
+  },
+  {
+    "source_file": "hipaa_privacy_summary.pdf",
+    "page_number": 25,
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "section_label": "§ 164.506",
+    "citation": "HIPAA § 164.506",
+    "chunk_id": "hipaa_privacy_summary.pdf_p25_c3"
+  }
+]

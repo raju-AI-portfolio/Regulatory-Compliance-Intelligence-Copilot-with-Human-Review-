@@ -1,0 +1,52 @@
+[
+  {
+    "user_input": "What is 'personal data' under GDPR?",
+    "reference": "Under GDPR Article 4(1), 'personal data' means any information relating to an identified or identifiable natural person ('data subject'). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person. Source: GDPR Article 4(1), Regulation (EU) 2016/679.",
+    "framework": "gdpr"
+  },
+  {
+    "user_input": "What is the right to restriction of processing under GDPR?",
+    "reference": "Under GDPR Article 18, the data subject has the right to obtain restriction of processing where one of the following applies: (a) the accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy; (b) the processing is unlawful and the data subject opposes erasure and requests restriction instead; (c) the controller no longer needs the data but the data subject requires them for establishment, exercise, or defence of legal claims; (d) the data subject has objected to processing pending verification of whether the controller's legitimate grounds override the data subject's. When processing is restricted, the data may only be stored and processed with consent, for legal claims, to protect another person's rights, or for important public interest. Source: GDPR Article 18, Regulation (EU) 2016/679.",
+    "framework": "gdpr"
+  },
+  {
+    "user_input": "What obligations does GDPR impose on joint controllers?",
+    "reference": "Under GDPR Article 26, where two or more controllers jointly determine the purposes and means of processing, they are joint controllers. Joint controllers must determine their respective responsibilities for compliance with the GDPR obligations in a transparent manner through an arrangement between them. The essence of the arrangement must be made available to the data subject. Regardless of the terms of the arrangement, the data subject may exercise their GDPR rights against and vis-à-vis each of the controllers. The CJEU (Case C-25/17, Jehovan todistajat, and C-210/16 Wirtschaftsakademie) has further clarified that joint controllership can arise even where one party has more limited influence on the purpose and means of processing. Source: GDPR Article 26, Regulation (EU) 2016/679; CJEU Cases C-25/17, C-210/16.",
+    "framework": "gdpr"
+  },
+  {
+    "user_input": "What is the right to erasure under GDPR?",
+    "reference": "GDPR Article 17 grants data subjects the 'right to be forgotten' (right to erasure). Controllers must erase personal data without undue delay when: (1) data is no longer necessary for its original purpose; (2) consent is withdrawn and no other legal basis exists; (3) the individual objects and there are no overriding legitimate grounds; (4) data was unlawfully processed; (5) erasure is required for EU/Member State law compliance; (6) data was collected from a child for information society services. Exceptions apply for freedom of expression, legal obligations, public interest, or legal claims. Source: GDPR Article 17, Regulation (EU) 2016/679.",
+    "framework": "gdpr"
+  },
+  {
+    "user_input": "How must a covered entity respond to an individual's access request under HIPAA?",
+    "reference": "Under HIPAA (45 CFR §164.524), a covered entity must act on an individual's request for access to their PHI within 30 days of receipt of the request. If the CE cannot act within 30 days, it may extend by one additional 30-day period, but must provide the individual with a written statement of the reason for the delay and the date by which access will be provided. Permissible grounds for denial: (a) Unreviewable: access was compiled in anticipation of litigation; information was obtained from a confidential source; information could endanger the life/safety of another; (b) Reviewable by independent licensed health care professional: the access is likely to endanger the life/physical safety of the individual or another person; the PHI makes reference to another person who might be harmed; the covered entity is a correctional institution and access would jeopardise security. Format: the CE must provide access in the requested format if readily producible; otherwise in a readable hard copy form. Fee: a reasonable, cost-based fee is permissible. Source: 45 CFR §164.524, HIPAA Privacy Rule.",
+    "framework": "hipaa"
+  },
+  {
+    "user_input": "What is the HIPAA Breach Notification Rule?",
+    "reference": "The HIPAA Breach Notification Rule (45 CFR §§164.400–414), added by the HITECH Act of 2009, requires covered entities and their business associates to provide notification following a breach of unsecured PHI. A 'breach' is defined as an impermissible use or disclosure under the Privacy Rule that compromises the security or privacy of PHI. There is a presumption that any impermissible use or disclosure is a breach unless the covered entity or BA demonstrates that there is a low probability that the PHI has been compromised based on a four-factor risk assessment: (1) nature and extent of PHI involved; (2) identity of unauthorised person; (3) whether PHI was actually acquired or viewed; (4) extent to which the risk has been mitigated. Source: 45 CFR §§164.400–414, HIPAA Breach Notification Rule.",
+    "framework": "hipaa"
+  },
+  {
+    "user_input": "What uses of PHI are permitted without authorization under HIPAA?",
+    "reference": "Under HIPAA Privacy Rule 45 CFR §164.502(a), covered entities may use or disclose PHI without authorization for: (1) Treatment, Payment, and Healthcare Operations (TPO); (2) the individual's own access to their PHI; (3) uses required by law; (4) public health activities (e.g., disease reporting, FDA oversight); (5) victims of abuse, neglect, or domestic violence; (6) health oversight activities by government agencies; (7) judicial/administrative proceedings (with court order or subpoena); (8) law enforcement purposes (limited conditions); (9) decedents (coroners, funeral directors); (10) organ/eye/tissue donation; (11) research with IRB waiver; (12) to avert serious threats to health or safety; (13) specialized government functions (military, national security); (14) workers' compensation. Source: 45 CFR §§164.502–164.514, HIPAA Privacy Rule.",
+    "framework": "hipaa"
+  },
+  {
+    "user_input": "What is the NIST Cybersecurity Framework (CSF)?",
+    "reference": "The NIST Cybersecurity Framework (CSF) is a voluntary framework developed by the National Institute of Standards and Technology (NIST) to help organisations manage and reduce cybersecurity risk. Originally released in February 2014 (CSF v1.0) in response to Executive Order 13636, it was updated to CSF v1.1 in April 2018 and most recently to CSF v2.0 in February 2024. The CSF v2.0 is applicable to organisations of any size, sector, or cybersecurity maturity level. It provides a common language and systematic methodology for managing cybersecurity risk through five components: the CSF Core, Profiles, Tiers, Implementation Examples, and Informative References. Source: NIST Cybersecurity Framework v2.0 (2024), NIST.",
+    "framework": "nist"
+  },
+  {
+    "user_input": "What are the six core Functions of NIST CSF v2.0?",
+    "reference": "The NIST CSF v2.0 Core is organised into six Functions: (1) GOVERN (GV): establishes the organisation's cybersecurity risk management strategy, expectations, and policy — new in v2.0; (2) IDENTIFY (ID): helps the organisation understand its assets, suppliers, and cybersecurity risks; (3) PROTECT (PR): implements safeguards to manage cybersecurity risks and ensure delivery of critical services; (4) DETECT (DE): enables timely discovery of cybersecurity events; (5) RESPOND (RS): defines actions to take when a cybersecurity incident is detected; (6) RECOVER (RC): defines actions to restore capabilities impaired by a cybersecurity incident. Together these Functions provide a comprehensive approach to managing cybersecurity risk. Source: NIST CSF v2.0, Section 2.1, NIST (2024).",
+    "framework": "nist"
+  },
+  {
+    "user_input": "What are NIST CSF profiles?",
+    "reference": "A NIST CSF Profile (Section 3.2 of CSF v2.0) represents an organization's alignment of its cybersecurity requirements, objectives, risk appetite, and resources against the desired outcomes of the CSF Core. Profiles help organizations: (1) describe their current cybersecurity posture ('Current Profile'); (2) describe their target cybersecurity posture ('Target Profile'); (3) identify and prioritize gaps to improve; (4) communicate cybersecurity needs to internal/external stakeholders. Community Profiles can also be developed for sectors or use cases. Profiles are not prescriptive templates — they are tailored to the organization's specific mission, risk tolerance, and resources. Source: NIST Cybersecurity Framework v2.0, Section 3.2 (2024).",
+    "framework": "nist"
+  }
+]

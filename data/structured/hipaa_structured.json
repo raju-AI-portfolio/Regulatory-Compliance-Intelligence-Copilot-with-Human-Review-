@@ -1,0 +1,74 @@
+[
+  {
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "part": "164",
+    "subpart": "E",
+    "section_number": "164.502",
+    "section_title": "Uses and disclosures of protected health information: General rules",
+    "title": "HIPAA 45 CFR § 164.502",
+    "citation": "HIPAA 45 CFR § 164.502",
+    "source_type": "structured_json",
+    "text": "45 CFR § 164.502 sets the general rule for uses and disclosures of protected health information. A covered entity or business associate may not use or disclose protected health information except as permitted or required by the HIPAA Privacy Rule. This section establishes the baseline rule that uses and disclosures are restricted unless a specific HIPAA permission, requirement, or exception applies."
+  },
+  {
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "part": "164",
+    "subpart": "E",
+    "section_number": "164.506",
+    "section_title": "Uses and disclosures to carry out treatment, payment, or health care operations",
+    "title": "HIPAA 45 CFR § 164.506",
+    "citation": "HIPAA 45 CFR § 164.506",
+    "source_type": "structured_json",
+    "text": "45 CFR § 164.506 permits a covered entity to use or disclose protected health information for its own treatment, payment, and health care operations. A covered entity may also disclose protected health information for treatment activities of a health care provider, for payment activities, and for certain health care operations when the regulatory conditions are met. This is the primary HIPAA section for treatment, payment, and health care operations."
+  },
+  {
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "part": "164",
+    "subpart": "E",
+    "section_number": "164.508",
+    "section_title": "Uses and disclosures for which an authorization is required",
+    "title": "HIPAA 45 CFR § 164.508",
+    "citation": "HIPAA 45 CFR § 164.508",
+    "source_type": "structured_json",
+    "text": "45 CFR § 164.508 governs uses and disclosures that require an individual's valid authorization. When HIPAA does not otherwise permit or require the use or disclosure of protected health information, authorization is required. This section is the core HIPAA rule for authorization-based uses and disclosures."
+  },
+  {
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "part": "164",
+    "subpart": "E",
+    "section_number": "164.512",
+    "section_title": "Uses and disclosures for which an authorization or opportunity to agree or object is not required",
+    "title": "HIPAA 45 CFR § 164.512",
+    "citation": "HIPAA 45 CFR § 164.512",
+    "source_type": "structured_json",
+    "text": "45 CFR § 164.512 permits certain uses and disclosures of protected health information without the individual's written authorization and without an opportunity to agree or object. These include specific public policy and regulatory purposes such as public health activities, health oversight, law enforcement, and other permitted categories described in the HIPAA Privacy Rule."
+  },
+  {
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "part": "164",
+    "subpart": "E",
+    "section_number": "164.514",
+    "section_title": "Other requirements relating to uses and disclosures of protected health information",
+    "title": "HIPAA 45 CFR § 164.514",
+    "citation": "HIPAA 45 CFR § 164.514",
+    "source_type": "structured_json",
+    "text": "45 CFR § 164.514 contains additional requirements relating to uses and disclosures of protected health information, including de-identification standards, limited data set requirements, and other implementation rules connected to privacy protections. This section is commonly relevant when a question concerns de-identification, data minimization, or related disclosure controls."
+  },
+  {
+    "regulation": "HIPAA",
+    "jurisdiction": "US",
+    "part": "164",
+    "subpart": "E",
+    "section_number": "164.522",
+    "section_title": "Rights to request privacy protection for protected health information",
+    "title": "HIPAA 45 CFR § 164.522",
+    "citation": "HIPAA 45 CFR § 164.522",
+    "source_type": "structured_json",
+    "text": "45 CFR § 164.522 gives individuals rights to request restrictions on certain uses and disclosures of protected health information and to request confidential communications. This section is most relevant when a question concerns restrictions requested by the individual rather than the core permission rules for treatment, payment, operations, or authorization."
+  }
+]

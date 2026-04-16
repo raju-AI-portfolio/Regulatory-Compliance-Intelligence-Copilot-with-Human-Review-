@@ -1,0 +1,38 @@
+[
+  {
+    "title": "GDPR Article 4 - Definitions",
+    "regulation": "GDPR",
+    "article_number": "Art. 4",
+    "article_title": "Definitions",
+    "section_number": "",
+    "section_title": "",
+    "jurisdiction": "EU",
+    "citation": "GDPR Art. 4",
+    "source_type": "structured_json",
+    "text": "For the purposes of this Regulation: ‘personal data’ means any information relating to an identified or identifiable natural person; ‘processing’ means any operation or set of operations which is performed on personal data or on sets of personal data."
+  },
+  {
+    "title": "GDPR Article 6 - Lawfulness of processing",
+    "regulation": "GDPR",
+    "article_number": "Art. 6",
+    "article_title": "Lawfulness of processing",
+    "section_number": "",
+    "section_title": "",
+    "jurisdiction": "EU",
+    "citation": "GDPR Art. 6",
+    "source_type": "structured_json",
+    "text": "Processing shall be lawful only if and to the extent that at least one of the following applies: the data subject has given consent to the processing of his or her personal data for one or more specific purposes."
+  },
+  {
+    "title": "GDPR Article 7 - Conditions for consent",
+    "regulation": "GDPR",
+    "article_number": "Art. 7",
+    "article_title": "Conditions for consent",
+    "section_number": "",
+    "section_title": "",
+    "jurisdiction": "EU",
+    "citation": "GDPR Art. 7",
+    "source_type": "structured_json",
+    "text": "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data. The data subject shall have the right to withdraw his or her consent at any time."
+  }
+]
